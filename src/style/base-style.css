@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.App{
+    padding: 0 2em;
+}
+
+header{
+    padding: 2em;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.lead{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(82, 82, 82);
+    text-align: center;
+}
+
+@media(max-width: 450px) {
+    h1{
+        font-size: 3rem;
+    }
+
+    .lead{
+        font-size: 1.2rem;
+    }
+}
+
+.list-group{
+    gap: 2em;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat( auto-fit, minmax(100px, 300px) );
+}
+
+@media(max-width: 710px) {
+    .list-group{
+        grid-template-columns: 1fr;
+    }
+}
+
+.list-item{
+    padding: 1em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-thumb{
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+
+.article-title{
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: rgb(26, 26, 26);
+    text-align: center;
+    letter-spacing: 0.7px;
+}
+
+.article-sub-title{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgb(82, 82, 82);
+    text-align: center;
+    letter-spacing: 0.7px;
+    margin: 0;
+}
+
+.router-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.piece-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.piece-inner{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 1em 0 0.5em 0;
+}
+
+.piece-title{
+    margin: 0.5em;
+}
+
+@media(max-width: 450px) {
+    .piece-title{
+        margin-top: 1em;
+    }
+}
+
+#back-button{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+#back-button > svg{
+    width: 32px;
+    height: 32px;
+    fill: #3f3f3f;
+}
+
+#back-button > span{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #3f3f3f;
+    text-align: center;
+    letter-spacing: 0.7px;
+}
+
+.live-label{
+    font-size: 36px;
+    margin-bottom: 0.25em;
+}
